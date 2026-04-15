@@ -8,10 +8,10 @@ export type DetectionSubcategory =
   | "red-enhanced"
   | "pbse"
   | "pbs"
-  | "apd";
+  | "apd"
+  | "preamp-modules";
 
 export type EmissionSubcategory =
-  | "uv-led"
   | "visible-led"
   | "ir-led"
   | "ir-emitter";
@@ -45,6 +45,8 @@ export interface Product {
     wavelengthRange?: string;
     activeArea?: string;
     responsivity?: string;
+    outputPower?: string;
+    peakWavelength?: string;
     packageType?: string;
   };
   features: string[];
@@ -65,6 +67,12 @@ export interface ProductFamily {
   image?: string;
   wavelengthRange: string;
   productCount: number;
+}
+
+export interface TechnologyGroup {
+  id: string;
+  label: string;
+  subcategories: string[];
 }
 
 export interface IndustryPage {

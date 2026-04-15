@@ -17,14 +17,36 @@ export const mainNavigation: NavItem[] = [
         description: "Photodiodes & APDs from EUV to NIR",
         image: "/images/products/silicon-detectors.jpg",
         children: [
-          { label: "SXUV Series", href: "/products/detection?sub=sxuv", description: "EUV-optimized (1\u2013190 nm)" },
-          { label: "AXUV Series", href: "/products/detection?sub=axuv", description: "100% IQE (0.01\u2013190 nm)" },
-          { label: "UVG Series", href: "/products/detection?sub=uvg", description: "UV detectors (190\u2013400 nm)" },
-          { label: "Blue Enhanced", href: "/products/detection?sub=blue-enhanced", description: "Visible (400\u20131000 nm)" },
-          { label: "Red Enhanced", href: "/products/detection?sub=red-enhanced", description: "NIR (400\u20131100 nm)" },
-          { label: "PbSe Detectors", href: "/products/detection?sub=pbse", description: "Mid-IR (1\u20135 \u03BCm)" },
-          { label: "PbS Detectors", href: "/products/detection?sub=pbs", description: "SWIR (1\u20133 \u03BCm)" },
-          { label: "Avalanche PDs", href: "/products/detection?sub=apd", description: "High-gain APDs" },
+          {
+            label: "Silicon Photodiodes",
+            href: "/products/detection?tech=silicon-photodiodes",
+            description: "EUV to NIR silicon detectors",
+            children: [
+              { label: "SXUV Series", href: "/products/detection?sub=sxuv", description: "EUV-optimized (1\u2013190 nm)" },
+              { label: "AXUV Series", href: "/products/detection?sub=axuv", description: "100% IQE (0.01\u2013190 nm)" },
+              { label: "UVG Series", href: "/products/detection?sub=uvg", description: "UV detectors (190\u2013400 nm)" },
+              { label: "Blue Enhanced", href: "/products/detection?sub=blue-enhanced", description: "Visible (400\u20131000 nm)" },
+              { label: "Red Enhanced", href: "/products/detection?sub=red-enhanced", description: "NIR (400\u20131100 nm)" },
+              { label: "Preamp Modules", href: "/products/detection?sub=preamp-modules", description: "Photodiode + TIA" },
+            ],
+          },
+          {
+            label: "Avalanche Photodiodes",
+            href: "/products/detection?tech=avalanche-photodiodes",
+            description: "High-gain APDs for low-light detection",
+            children: [
+              { label: "Avalanche PDs", href: "/products/detection?sub=apd", description: "Si and InGaAs (400\u20131700 nm)" },
+            ],
+          },
+          {
+            label: "PbS/PbSe Detectors",
+            href: "/products/detection?tech=ir-detectors",
+            description: "Mid-IR and SWIR lead-salt detectors",
+            children: [
+              { label: "PbSe Detectors", href: "/products/detection?sub=pbse", description: "Mid-IR (1\u20135 \u03BCm)" },
+              { label: "PbS Detectors", href: "/products/detection?sub=pbs", description: "SWIR (1\u20133 \u03BCm)" },
+            ],
+          },
         ],
       },
       {
@@ -33,10 +55,9 @@ export const mainNavigation: NavItem[] = [
         description: "LEDs & IR emitters from UV to MIR",
         image: "/images/products/emission-banner.jpg",
         children: [
-          { label: "UV LEDs", href: "/products/emission?sub=uv-led", description: "320\u2013365 nm" },
-          { label: "Visible LEDs", href: "/products/emission?sub=visible-led", description: "400\u2013700 nm" },
-          { label: "IR LEDs", href: "/products/emission?sub=ir-led", description: "850\u2013940 nm" },
-          { label: "IR Emitters", href: "/products/emission?sub=ir-emitter", description: "Broadband 2\u20135 \u03BCm" },
+          { label: "IR LEDs", href: "/products/emission?sub=ir-led", description: "810\u2013880 nm" },
+          { label: "Visible LEDs", href: "/products/emission?sub=visible-led", description: "469\u2013685 nm" },
+          { label: "IR Emitters", href: "/products/emission?sub=ir-emitter", description: "Broadband 2\u201312 \u03BCm" },
         ],
       },
       {

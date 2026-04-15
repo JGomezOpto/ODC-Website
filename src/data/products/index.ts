@@ -1,8 +1,8 @@
 import { detectionProducts } from "./detection";
 import { emissionProducts } from "./emission";
-import type { Product, ProductCategory, ProductFamily, IndustryVertical } from "./types";
+import type { Product, ProductCategory, ProductFamily, IndustryVertical, TechnologyGroup } from "./types";
 
-export type { Product, ProductCategory, ProductFamily, IndustryVertical };
+export type { Product, ProductCategory, ProductFamily, IndustryVertical, TechnologyGroup };
 export { detectionProducts, emissionProducts };
 
 export const allProducts: Product[] = [...detectionProducts, ...emissionProducts];
@@ -48,7 +48,7 @@ export const productFamilies: ProductFamily[] = [
     description: "EUV-optimized photodiodes with integrated thin film filters for 1\u2013190 nm",
     image: "/images/products/silicon-detectors.jpg",
     wavelengthRange: "1\u2013190 nm",
-    productCount: 2,
+    productCount: 8,
   },
   {
     id: "axuv",
@@ -56,10 +56,10 @@ export const productFamilies: ProductFamily[] = [
     name: "AXUV Series",
     category: "detection",
     subcategory: "axuv",
-    description: "100% internal quantum efficiency detectors for soft X-ray to VUV",
+    description: "100% internal quantum efficiency detectors for soft X-ray to VUV, plus sockets",
     image: "/images/products/silicon-detectors.jpg",
     wavelengthRange: "0.01\u2013190 nm",
-    productCount: 2,
+    productCount: 16,
   },
   {
     id: "uvg",
@@ -70,7 +70,7 @@ export const productFamilies: ProductFamily[] = [
     description: "Reliable UV detectors optimized for 190\u2013400 nm",
     image: "/images/products/silicon-detectors.jpg",
     wavelengthRange: "190\u2013400 nm",
-    productCount: 1,
+    productCount: 5,
   },
   {
     id: "blue-enhanced",
@@ -78,10 +78,10 @@ export const productFamilies: ProductFamily[] = [
     name: "Blue Enhanced",
     category: "detection",
     subcategory: "blue-enhanced",
-    description: "High responsivity in the blue-green visible region",
+    description: "High responsivity in the blue-green visible region (400\u20131000 nm)",
     image: "/images/products/silicon-detectors.jpg",
     wavelengthRange: "400\u20131000 nm",
-    productCount: 1,
+    productCount: 7,
   },
   {
     id: "red-enhanced",
@@ -89,10 +89,21 @@ export const productFamilies: ProductFamily[] = [
     name: "Red Enhanced",
     category: "detection",
     subcategory: "red-enhanced",
-    description: "Extended sensitivity in the red and near-infrared region",
+    description: "Extended sensitivity in the red and near-infrared region (400\u20131100 nm)",
     image: "/images/products/silicon-detectors.jpg",
     wavelengthRange: "400\u20131100 nm",
-    productCount: 1,
+    productCount: 8,
+  },
+  {
+    id: "preamp-modules",
+    slug: "preamp-modules",
+    name: "Preamp Modules",
+    category: "detection",
+    subcategory: "preamp-modules",
+    description: "Integrated photodiode + transimpedance amplifier modules (100 MHz / 500 MHz)",
+    image: "/images/products/silicon-detectors.jpg",
+    wavelengthRange: "400\u20131100 nm",
+    productCount: 4,
   },
   {
     id: "pbse",
@@ -103,7 +114,7 @@ export const productFamilies: ProductFamily[] = [
     description: "High-sensitivity lead selenide infrared detectors for 1\u20135 \u03BCm",
     image: "/images/products/silicon-detectors.jpg",
     wavelengthRange: "1\u20135 \u03BCm",
-    productCount: 1,
+    productCount: 13,
   },
   {
     id: "pbs",
@@ -114,7 +125,7 @@ export const productFamilies: ProductFamily[] = [
     description: "Broadband lead sulfide infrared detectors for 1\u20133 \u03BCm",
     image: "/images/products/silicon-detectors.jpg",
     wavelengthRange: "1\u20133 \u03BCm",
-    productCount: 1,
+    productCount: 10,
   },
   {
     id: "apd",
@@ -122,10 +133,10 @@ export const productFamilies: ProductFamily[] = [
     name: "Avalanche Photodiodes",
     category: "detection",
     subcategory: "apd",
-    description: "High-gain, low-noise APDs for low-light detection",
+    description: "High-gain, low-noise APDs for low-light detection (Si and InGaAs)",
     image: "/images/products/silicon-detectors.jpg",
     wavelengthRange: "400\u20131700 nm",
-    productCount: 1,
+    productCount: 3,
   },
   {
     id: "ir-led",
@@ -133,21 +144,10 @@ export const productFamilies: ProductFamily[] = [
     name: "IR LEDs",
     category: "emission",
     subcategory: "ir-led",
-    description: "High-power infrared LEDs from 850\u2013940 nm",
+    description: "Standard and high-power near-infrared LEDs from 810\u2013880 nm in hermetic packages",
     image: "/images/products/emission-banner.jpg",
-    wavelengthRange: "850\u2013940 nm",
-    productCount: 2,
-  },
-  {
-    id: "uv-led",
-    slug: "uv-led",
-    name: "UV LEDs",
-    category: "emission",
-    subcategory: "uv-led",
-    description: "UV-A and UV-B LEDs for curing and fluorescence",
-    image: "/images/products/emission-banner.jpg",
-    wavelengthRange: "320\u2013365 nm",
-    productCount: 1,
+    wavelengthRange: "810\u2013880 nm",
+    productCount: 19,
   },
   {
     id: "visible-led",
@@ -155,10 +155,10 @@ export const productFamilies: ProductFamily[] = [
     name: "Visible LEDs",
     category: "emission",
     subcategory: "visible-led",
-    description: "High-brightness visible LEDs across the spectrum",
+    description: "High-output visible LEDs from blue to deep red in hermetic and SMD packages",
     image: "/images/products/emission-banner.jpg",
-    wavelengthRange: "400\u2013700 nm",
-    productCount: 1,
+    wavelengthRange: "469\u2013685 nm",
+    productCount: 3,
   },
   {
     id: "ir-emitter",
@@ -166,9 +166,27 @@ export const productFamilies: ProductFamily[] = [
     name: "IR Emitters",
     category: "emission",
     subcategory: "ir-emitter",
-    description: "Broadband thermal infrared emitters for gas sensing",
+    description: "Broadband thermal IR emitters \u2014 steady-state, pulsable, and high-speed series",
     image: "/images/products/emission-banner.jpg",
-    wavelengthRange: "2\u20135 \u03BCm",
-    productCount: 1,
+    wavelengthRange: "2\u201312 \u03BCm",
+    productCount: 19,
+  },
+];
+
+export const detectionTechnologyGroups: TechnologyGroup[] = [
+  {
+    id: "silicon-photodiodes",
+    label: "Silicon Photodiodes",
+    subcategories: ["sxuv", "axuv", "uvg", "blue-enhanced", "red-enhanced", "preamp-modules"],
+  },
+  {
+    id: "avalanche-photodiodes",
+    label: "Avalanche Photodiodes",
+    subcategories: ["apd"],
+  },
+  {
+    id: "ir-detectors",
+    label: "PbS/PbSe Detectors",
+    subcategories: ["pbse", "pbs"],
   },
 ];
