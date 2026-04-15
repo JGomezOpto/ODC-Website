@@ -9,6 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { LaserBeam } from "./LaserBeam";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -105,6 +106,9 @@ export function HeroSection() {
           ))}
         </div>
       )}
+
+      {/* Spectrum laser beam */}
+      <LaserBeam />
 
       {/* Content — GSAP parallax on scroll */}
       <div
