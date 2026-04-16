@@ -29,24 +29,29 @@ export default async function Image() {
       >
         {/* Top: Logo */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={logoBase64} alt="Opto Diode Corporation" height={52} style={{ objectFit: "contain", objectPosition: "left" }} />
+        <img
+          src={logoBase64}
+          alt="Opto Diode Corporation"
+          height={52}
+          style={{ objectFit: "contain", objectPosition: "left" }}
+        />
 
         {/* Center: Headline */}
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-          <div
-            style={{
-              fontSize: 56,
-              fontWeight: 800,
-              color: "#ffffff",
-              lineHeight: 1.1,
-              letterSpacing: "-0.02em",
-            }}
-          >
-            Photonics for
-            <br />
-            Demanding Environments
+          <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
+            <span
+              style={{
+                fontSize: 56,
+                fontWeight: 800,
+                color: "#ffffff",
+                lineHeight: 1.1,
+                letterSpacing: "-0.02em",
+              }}
+            >
+              Photonics for Demanding Environments
+            </span>
           </div>
-          <div
+          <span
             style={{
               fontSize: 26,
               fontWeight: 500,
@@ -55,19 +60,13 @@ export default async function Image() {
             }}
           >
             Silicon Photodiodes · EUV/XUV Detectors · IR Emitters · APDs
-          </div>
+          </span>
         </div>
 
         {/* Bottom: Domain */}
-        <div
-          style={{
-            fontSize: 18,
-            color: "#6b7280",
-            fontWeight: 400,
-          }}
-        >
+        <span style={{ fontSize: 18, color: "#6b7280", fontWeight: 400 }}>
           optodiode.com · Camarillo, CA · Since 1984
-        </div>
+        </span>
       </div>
     ),
     { ...size }
