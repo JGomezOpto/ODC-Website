@@ -101,24 +101,25 @@ function MobileNavItem({
       <Link
         href={item.href}
         onClick={onClose}
-        className="block py-3 text-lg font-medium text-foreground hover:text-primary transition-colors"
+        className="flex items-center justify-between py-4 border-b border-border/50 text-[15px] font-medium text-foreground hover:text-primary transition-colors group"
       >
         {item.label}
+        <ArrowRight className="w-4 h-4 text-muted-foreground/50 group-hover:text-primary transition-colors shrink-0" />
       </Link>
     );
   }
 
   return (
-    <div>
+    <div className="border-b border-border/50">
       <button
         onClick={() => setExpanded(!expanded)}
-        className="flex w-full items-center justify-between py-3 text-lg font-medium text-foreground hover:text-primary transition-colors"
+        className="flex w-full items-center justify-between py-4 text-[15px] font-medium text-foreground hover:text-primary transition-colors"
       >
         {item.label}
         <ChevronDown
           className={cn(
-            "w-5 h-5 transition-transform",
-            expanded && "rotate-180"
+            "w-4 h-4 text-muted-foreground/70 transition-transform shrink-0",
+            expanded && "rotate-180 text-primary"
           )}
         />
       </button>
@@ -128,17 +129,18 @@ function MobileNavItem({
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.2 }}
+            transition={{ duration: 0.18 }}
             className="overflow-hidden"
           >
-            <div className="pl-4 pb-3 space-y-1">
+            <div className="pb-3 space-y-0.5">
               {item.children.map((child) => (
                 <Link
                   key={child.href}
                   href={child.href}
                   onClick={onClose}
-                  className="block py-2 text-muted-foreground hover:text-primary transition-colors"
+                  className="flex items-center gap-2 py-2.5 px-3 rounded-md text-sm text-muted-foreground hover:text-foreground hover:bg-accent/60 transition-colors group"
                 >
+                  <span className="w-1 h-1 rounded-full bg-muted-foreground/40 group-hover:bg-primary transition-colors shrink-0" />
                   {child.label}
                 </Link>
               ))}
@@ -288,7 +290,7 @@ export function Header() {
                     <X className="w-5 h-5" />
                   </Button>
                 </div>
-                <nav className="space-y-1">
+                <nav className="border-t border-border/50">
                   {mainNavigation.map((item) => (
                     <MobileNavItem
                       key={item.href}
@@ -297,7 +299,7 @@ export function Header() {
                     />
                   ))}
                 </nav>
-                <div className="mt-8 pt-8 border-t border-border">
+                <div className="mt-6 pt-6 border-t border-border">
                   <Link
                     href="/request-quote"
                     onClick={() => setMobileOpen(false)}
