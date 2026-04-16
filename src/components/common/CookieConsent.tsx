@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { Cookie, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -53,7 +54,10 @@ export function CookieConsent() {
                   We use cookies to enhance your browsing experience, analyze
                   site traffic, and understand where our visitors come from. By
                   clicking &ldquo;Accept&rdquo;, you consent to our use of
-                  cookies.
+                  cookies.{" "}
+                  <Link href="/privacy" className="text-primary hover:underline">
+                    Learn more
+                  </Link>
                 </p>
 
                 <div className="flex items-center gap-3 mt-4">

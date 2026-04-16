@@ -20,6 +20,7 @@ import {
   getProductSlugs,
   getAllProducts,
 } from "@/lib/sanity/data";
+import { buildBreadcrumbSchema, buildProductSchema } from "@/lib/seo/schemas";
 
 export async function generateStaticParams() {
   const slugs = await getProductSlugs("detection");
@@ -34,9 +35,18 @@ export async function generateMetadata({
   const { slug } = await params;
   const product = await getProductBySlug(slug);
   if (!product) return { title: "Product Not Found" };
+  const wavelength = product.keySpecs.wavelengthRange
+    ? ` — ${product.keySpecs.wavelengthRange}`
+    : "";
   return {
-    title: `${product.name} - ${product.partNumber}`,
-    description: product.shortDescription,
+    title: `${product.name}${wavelength} Photodiode`,
+    description: `${product.shortDescription} Part number ${product.partNumber}. Request a quote from Opto Diode Corporation.`,
+    alternates: {
+      canonical: `/products/detection/${product.slug}`,
+    },
+    openGraph: {
+      url: `https://optodiode.com/products/detection/${product.slug}`,
+    },
   };
 }
 
@@ -54,27 +64,14 @@ export default async function ProductDetailPage({
     .map((id) => allProducts.find((p) => p.id === id))
     .filter(Boolean) as typeof allProducts;
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://optodiode.com" },
-      { "@type": "ListItem", position: 2, name: "Products", item: "https://optodiode.com/products" },
-      { "@type": "ListItem", position: 3, name: "Detection", item: "https://optodiode.com/products/detection" },
-      { "@type": "ListItem", position: 4, name: product.name },
-    ],
-  };
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", item: "https://optodiode.com" },
+    { name: "Products", item: "https://optodiode.com/products" },
+    { name: "Detection", item: "https://optodiode.com/products/detection" },
+    { name: product.name },
+  ]);
 
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: product.name,
-    description: product.description,
-    sku: product.partNumber,
-    brand: { "@type": "Brand", name: "Opto Diode Corporation" },
-    manufacturer: { "@type": "Organization", name: "Opto Diode Corporation" },
-    ...(product.image && { image: `https://optodiode.com${product.image}` }),
-  };
+  const productSchema = buildProductSchema(product);
 
   return (
     <>

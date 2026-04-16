@@ -95,7 +95,7 @@ const organizationSchema = {
   },
   telephone: "+1-805-465-8700",
   email: "sales@optodiode.com",
-  sameAs: [],
+  sameAs: ["https://www.linkedin.com/company/opto-diode-corporation"],
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+1-805-465-8700",
@@ -116,6 +116,38 @@ const websiteSchema = {
   },
 };
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://optodiode.com/#localbusiness",
+  name: "Opto Diode Corporation",
+  telephone: "+1-805-465-8700",
+  email: "sales@optodiode.com",
+  url: "https://optodiode.com",
+  image: "https://optodiode.com/images/branding/logo.png",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "1260 Calle Suerte",
+    addressLocality: "Camarillo",
+    addressRegion: "CA",
+    postalCode: "93012",
+    addressCountry: "US",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 34.2164,
+    longitude: -119.0376,
+  },
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    opens: "08:00",
+    closes: "17:00",
+  },
+  hasMap:
+    "https://maps.google.com/?q=1260+Calle+Suerte+Camarillo+CA+93012",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -128,6 +160,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        <link rel="dns-prefetch" href="https://cdn.sanity.io" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -138,6 +171,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(websiteSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
           }}
         />
       </head>

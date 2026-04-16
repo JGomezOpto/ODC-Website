@@ -8,8 +8,9 @@ import { StatCounter } from "@/components/common/StatCounter";
 import { AnimatedTimeline } from "@/components/common/AnimatedTimeline";
 
 export const metadata: Metadata = {
-  title: "Our Company",
-  description: "Opto Diode Corporation — over 40 years of high quality, reliable photonics products. ISO 9001:2015 certified, ITAR registered, located in Camarillo, California.",
+  title: "About Opto Diode — Photodiode Manufacturer Since 1984",
+  description:
+    "Opto Diode Corporation: US silicon photodiode and LED manufacturer since 1984. ISO 9001:2015 certified, ITAR registered. Camarillo, CA. Custom photonics for defense, semiconductor, and medical.",
 };
 
 const teamMembers = [

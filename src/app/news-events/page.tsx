@@ -8,9 +8,9 @@ import { Badge } from "@/components/ui/badge";
 import { getAllNewsEvents } from "@/lib/sanity/data";
 
 export const metadata: Metadata = {
-  title: "News & Events",
+  title: "News, Events & Trade Shows",
   description:
-    "Latest news, product announcements, and upcoming trade shows from Opto Diode Corporation.",
+    "Opto Diode Corporation news, product launches, and upcoming trade shows — SPIE Photonics West, SPIE Defense + Security, and more.",
 };
 
 const typeLabels: Record<string, string> = {

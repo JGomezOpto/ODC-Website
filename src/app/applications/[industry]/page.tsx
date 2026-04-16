@@ -11,6 +11,7 @@ import { ProductCard } from "@/components/products/ProductCard";
 import { getIndustrySlugs, getProductsByIndustry } from "@/lib/sanity/data";
 import { industries as staticIndustries } from "@/data/industries";
 import type { IndustryVertical } from "@/data/products/types";
+import { buildBreadcrumbSchema } from "@/lib/seo/schemas";
 
 export async function generateStaticParams() {
   const slugs = await getIndustrySlugs();
@@ -21,7 +22,12 @@ export async function generateMetadata({ params }: { params: Promise<{ industry:
   const { industry: slug } = await params;
   const industry = staticIndustries.find((i) => i.slug === slug);
   if (!industry) return { title: "Industry Not Found" };
-  return { title: `${industry.name} Applications`, description: industry.description };
+  return {
+    title: `${industry.name} Applications`,
+    description: industry.description,
+    alternates: { canonical: `/applications/${slug}` },
+    openGraph: { url: `https://optodiode.com/applications/${slug}` },
+  };
 }
 
 export default async function IndustryPage({ params }: { params: Promise<{ industry: string }> }) {
@@ -31,8 +37,18 @@ export default async function IndustryPage({ params }: { params: Promise<{ indus
 
   const products = await getProductsByIndustry(industry.id as IndustryVertical);
 
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", item: "https://optodiode.com" },
+    { name: "Applications", item: "https://optodiode.com/applications" },
+    { name: industry.name, item: `https://optodiode.com/applications/${slug}` },
+  ]);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section className="relative py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0">

@@ -6,6 +6,7 @@ import { Calendar, MapPin, ChevronRight, ArrowLeft } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Badge } from "@/components/ui/badge";
 import { getNewsEventBySlug, getNewsEventSlugs } from "@/lib/sanity/data";
+import { buildNewsEventSchema } from "@/lib/seo/schemas";
 
 export async function generateStaticParams() {
   const slugs = await getNewsEventSlugs();
@@ -23,6 +24,8 @@ export async function generateMetadata({
   return {
     title: event.title,
     description: event.excerpt,
+    alternates: { canonical: `/news-events/${slug}` },
+    openGraph: { url: `https://optodiode.com/news-events/${slug}` },
   };
 }
 
@@ -49,8 +52,14 @@ export default async function NewsEventDetailPage({
   const event = await getNewsEventBySlug(slug);
   if (!event) notFound();
 
+  const newsEventSchema = buildNewsEventSchema(event);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(newsEventSchema) }}
+      />
       {/* Breadcrumb */}
       <div className="bg-card border-b border-border">
         <Container className="py-3">

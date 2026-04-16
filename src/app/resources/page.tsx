@@ -7,8 +7,9 @@ import { ScrollReveal } from "@/components/common/ScrollReveal";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Resources",
-  description: "Technical resources: blog, application notes, whitepapers, photonics glossary, and compliance documentation from Opto Diode Corporation.",
+  title: "Technical Resources — Application Notes, Datasheets & Glossary",
+  description:
+    "Engineering resources from Opto Diode Corporation: application notes, whitepapers, photonics glossary (200+ terms), compliance certifications, and technical blog posts.",
 };
 
 const resources = [

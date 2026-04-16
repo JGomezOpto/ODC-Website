@@ -4,11 +4,32 @@ import { Container } from "@/components/layout/Container";
 import { CategoryPageClient } from "@/components/products/CategoryPageClient";
 import { getProductsByCategory, getProductFamilies } from "@/lib/sanity/data";
 import { detectionTechnologyGroups } from "@/data/products";
+import { buildBreadcrumbSchema, buildFAQSchema } from "@/lib/seo/schemas";
+
+const DETECTION_FAQS = [
+  {
+    q: "What is the difference between SXUV and AXUV photodiodes?",
+    a: "SXUV photodiodes are optimized for EUV lithography at 13.5 nm and related semiconductor process control applications, offering high responsivity in the 1–40 nm range. AXUV photodiodes are designed for absolute power measurements across a broader 1–190 nm soft X-ray and EUV range, serving plasma diagnostics and synchrotron beamline monitoring.",
+  },
+  {
+    q: "What is the full spectral range of Opto Diode silicon photodiodes?",
+    a: "Opto Diode silicon photodiodes cover a spectral range from approximately 1 nm soft X-ray (SXUV/AXUV series) through 190 nm deep UV (UVG series), the full visible spectrum, and into the near-infrared up to 1100 nm. PbSe and PbS detectors extend coverage further into the mid-infrared (1–5 µm).",
+  },
+  {
+    q: "What is the difference between PbSe and PbS infrared detectors?",
+    a: "PbSe (lead selenide) detectors cover 1–5 µm and are ideal for mid-infrared gas analysis, flame detection, and industrial process monitoring. PbS (lead sulfide) detectors cover 1–3 µm and are preferred for NIR sensing, moisture analysis, and lower-cost infrared applications requiring high sensitivity in the short-wave infrared.",
+  },
+  {
+    q: "Are Opto Diode photodetectors ITAR compliant?",
+    a: "Yes. Opto Diode Corporation is ITAR registered and can supply ITAR-compliant photodetectors for defense, aerospace, and government applications. Please contact sales@optodiode.com for ITAR documentation and compliance information specific to your application.",
+  },
+];
 
 export const metadata: Metadata = {
-  title: "Detection Products",
+  title: "Silicon Photodiodes, EUV/XUV & IR Detectors",
   description:
-    "Silicon photodiodes (SXUV, AXUV, UVG), PbSe and PbS infrared detectors, and avalanche photodiodes for EUV to mid-infrared detection.",
+    "USA-made silicon photodiodes (AXUV, SXUV, UVG, blue/red-enhanced), PbSe/PbS IR detectors (1–5 µm), and APDs. ITAR compliant, ISO 9001:2015. EUV 13.5 nm specialists.",
+  alternates: { canonical: "/products/detection" },
 };
 
 export default async function DetectionPage({
@@ -23,8 +44,19 @@ export default async function DetectionPage({
   // Support both ?sub=sxuv (subcategory) and ?tech=silicon-photodiodes (technology group)
   const initialFilter = params.tech || params.sub || null;
 
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", item: "https://optodiode.com" },
+    { name: "Products", item: "https://optodiode.com/products" },
+    { name: "Detection Products", item: "https://optodiode.com/products/detection" },
+  ]);
+  const faqSchema = buildFAQSchema(DETECTION_FAQS);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <section className="relative py-16 lg:py-24 overflow-hidden">
         <div className="absolute inset-0">
@@ -64,6 +96,27 @@ export default async function DetectionPage({
         categoryName="Detection"
         technologyGroups={detectionTechnologyGroups}
       />
+
+      {/* FAQ Section */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <section className="py-16 bg-card border-t border-border">
+        <Container>
+          <h2 className="text-2xl font-bold text-foreground mb-8">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4 max-w-3xl">
+            {DETECTION_FAQS.map(({ q, a }) => (
+              <div key={q} className="rounded-lg border border-border p-5">
+                <h3 className="text-sm font-semibold text-foreground mb-2">{q}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{a}</p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
     </>
   );
 }

@@ -9,9 +9,9 @@ import { GlowCard } from "@/components/common/GlowCard";
 import { getProductFamilies } from "@/lib/sanity/data";
 
 export const metadata: Metadata = {
-  title: "Products",
+  title: "Photodiode & LED Emitter Products",
   description:
-    "Explore our complete range of photonic products: silicon photodiodes, infrared detectors, LED emitters, APDs, and custom integration solutions.",
+    "Complete photodetector and LED emitter portfolio: silicon photodiodes (EUV–NIR), PbSe/PbS IR detectors, avalanche photodiodes, UV/IR LED emitters, and custom OEM assemblies.",
 };
 
 const pillars = [

@@ -7,10 +7,18 @@ import { cn } from "@/lib/utils";
 import { Container } from "@/components/layout/Container";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { ScrollReveal } from "@/components/common/ScrollReveal";
+import { buildBreadcrumbSchema } from "@/lib/seo/schemas";
+
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Home", item: "https://optodiode.com" },
+  { name: "Products", item: "https://optodiode.com/products" },
+  { name: "Custom Integration Solutions", item: "https://optodiode.com/products/integration" },
+]);
 
 export const metadata: Metadata = {
-  title: "Integration & Custom Solutions",
-  description: "Custom opto-electronic assemblies and photonic solutions. From prototype to high-volume production, tailored to your specifications.",
+  title: "Custom Opto-Electronic Integration & OEM Assemblies",
+  description:
+    "Hermetically sealed custom opto-electronic assemblies, detector–emitter matched pairs, and OEM photonic modules. ISO 9001:2015 certified. From prototype to volume production.",
 };
 
 const process = [
@@ -23,6 +31,10 @@ const process = [
 export default function IntegrationPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="relative py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0">
           <Image src="/images/products/integration-banner.jpg" alt="Custom Integration" fill className="object-cover opacity-15" />

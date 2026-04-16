@@ -8,8 +8,9 @@ import { ScrollReveal } from "@/components/common/ScrollReveal";
 import { industries } from "@/data/industries";
 
 export const metadata: Metadata = {
-  title: "Applications",
-  description: "Photonic solutions for semiconductor, aerospace, medical, industrial, fire/flame/gas detection, and food analysis applications.",
+  title: "Photonic Solutions by Industry — Semiconductor, Aerospace, Medical",
+  description:
+    "Opto Diode photonic solutions across six industries: semiconductor lithography (EUV), aerospace & defense, medical diagnostics, fire/flame/gas detection, industrial process control, and food analysis.",
 };
 
 export default function ApplicationsPage() {

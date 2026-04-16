@@ -7,9 +7,9 @@ import { ScrollReveal } from "@/components/common/ScrollReveal";
 import { getAllBlogPosts } from "@/lib/sanity/data";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "Photonics Engineering Blog — EUV, IR & LED Technology",
   description:
-    "Insights on photonics technology, product updates, application tips, and industry news from Opto Diode Corporation.",
+    "Technical articles on EUV photodiodes, SXUV/AXUV detectors, PbSe/PbS IR sensors, NDIR gas sensing, and LED emitter selection from Opto Diode Corporation engineers.",
 };
 
 export default async function BlogPage() {

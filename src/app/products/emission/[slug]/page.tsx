@@ -11,6 +11,7 @@ import { Container } from "@/components/layout/Container";
 import { ScrollReveal } from "@/components/common/ScrollReveal";
 import { ProductCard } from "@/components/products/ProductCard";
 import { getProductBySlug, getProductSlugs, getAllProducts } from "@/lib/sanity/data";
+import { buildBreadcrumbSchema, buildProductSchema } from "@/lib/seo/schemas";
 
 export async function generateStaticParams() {
   const slugs = await getProductSlugs("emission");
@@ -21,7 +22,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const product = await getProductBySlug(slug);
   if (!product) return { title: "Product Not Found" };
-  return { title: `${product.name} - ${product.partNumber}`, description: product.shortDescription };
+  const wavelength = product.keySpecs.peakWavelength ?? product.keySpecs.wavelengthRange;
+  const waveStr = wavelength ? ` — ${wavelength}` : "";
+  return {
+    title: `${product.name}${waveStr} LED Emitter`,
+    description: `${product.shortDescription} Part number ${product.partNumber}. Request a quote from Opto Diode Corporation.`,
+    alternates: {
+      canonical: `/products/emission/${product.slug}`,
+    },
+    openGraph: {
+      url: `https://optodiode.com/products/emission/${product.slug}`,
+    },
+  };
 }
 
 export default async function EmissionDetailPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -34,27 +46,14 @@ export default async function EmissionDetailPage({ params }: { params: Promise<{
     .map((id) => allProducts.find((p) => p.id === id))
     .filter(Boolean) as typeof allProducts;
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://optodiode.com" },
-      { "@type": "ListItem", position: 2, name: "Products", item: "https://optodiode.com/products" },
-      { "@type": "ListItem", position: 3, name: "Emission", item: "https://optodiode.com/products/emission" },
-      { "@type": "ListItem", position: 4, name: product.name },
-    ],
-  };
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", item: "https://optodiode.com" },
+    { name: "Products", item: "https://optodiode.com/products" },
+    { name: "Emission", item: "https://optodiode.com/products/emission" },
+    { name: product.name },
+  ]);
 
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: product.name,
-    description: product.description,
-    sku: product.partNumber,
-    brand: { "@type": "Brand", name: "Opto Diode Corporation" },
-    manufacturer: { "@type": "Organization", name: "Opto Diode Corporation" },
-    ...(product.image && { image: `https://optodiode.com${product.image}` }),
-  };
+  const productSchema = buildProductSchema(product);
 
   return (
     <>
