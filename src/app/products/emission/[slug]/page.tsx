@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { Download, ArrowRight, ChevronRight, FileText } from "lucide-react";
+import { Download, ArrowRight, ChevronRight, FileText, ShoppingCart } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
@@ -125,6 +125,17 @@ export default async function EmissionDetailPage({ params }: { params: Promise<{
                     >
                       <Download className="mr-2 w-4 h-4" />
                       Download Datasheet
+                    </a>
+                  )}
+                  {product.digikeyUrl && (
+                    <a
+                      href={product.digikeyUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={cn(buttonVariants({ variant: "outline", size: "lg" }), "border-[#CC0000] text-[#CC0000] hover:bg-[#CC0000]/10")}
+                    >
+                      <ShoppingCart className="mr-2 w-4 h-4" />
+                      Buy on DigiKey
                     </a>
                   )}
                 </div>

@@ -199,7 +199,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="relative shrink-0">
             <Image
-              src="/images/branding/logo.png"
+              src="/images/branding/logo-white.png"
               alt="Opto Diode Corporation"
               width={180}
               height={40}
@@ -275,7 +275,7 @@ export function Header() {
                 <SheetTitle className="sr-only">Navigation</SheetTitle>
                 <div className="flex items-center justify-between mb-8">
                   <Image
-                    src="/images/branding/logo.png"
+                    src="/images/branding/logo-white.png"
                     alt="Opto Diode"
                     width={140}
                     height={32}

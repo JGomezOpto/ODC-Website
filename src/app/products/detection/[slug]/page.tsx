@@ -7,6 +7,7 @@ import {
   Download,
   ArrowRight,
   ChevronRight,
+  ShoppingCart,
 } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -220,6 +221,17 @@ export default async function ProductDetailPage({
                     >
                       <Download className="mr-2 w-4 h-4" />
                       Download Datasheet
+                    </a>
+                  )}
+                  {product.digikeyUrl && (
+                    <a
+                      href={product.digikeyUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={cn(buttonVariants({ variant: "outline", size: "lg" }), "border-[#CC0000] text-[#CC0000] hover:bg-[#CC0000]/10")}
+                    >
+                      <ShoppingCart className="mr-2 w-4 h-4" />
+                      Buy on DigiKey
                     </a>
                   )}
                 </div>

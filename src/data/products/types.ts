@@ -53,6 +53,7 @@ export interface Product {
   applications: IndustryVertical[];
   relatedProducts: string[];
   datasheetUrl?: string;
+  digikeyUrl?: string;
   isNew?: boolean;
   isFeatured?: boolean;
 }

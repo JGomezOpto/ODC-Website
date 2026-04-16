@@ -17,7 +17,7 @@ export const emissionProducts: Product[] = [
       "810 nm near-infrared LED in a hermetically sealed TO-46 package with wide-angle emission. Radiation-hardened GaAlAs construction ensures stable output in space and high-radiation environments.",
     shortDescription: "810 nm wide-angle NIR LED, radiation hardened",
     image: "/images/products/emission/od-800w.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD800WDS.pdf",
+    datasheetUrl: "/datasheets/OD800W.pdf",
     specs: [
       { name: "Peak Wavelength", value: "810", unit: "nm" },
       { name: "Radiant Power", value: "3", unit: "mW" },
@@ -52,7 +52,7 @@ export const emissionProducts: Product[] = [
       "810 nm near-infrared LED in a hermetically sealed TO-46 package with medium-angle lens. Radiation-hardened GaAlAs construction for space and defense applications.",
     shortDescription: "810 nm medium-angle NIR LED, radiation hardened",
     image: "/images/products/emission/od-800l.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD800LDS.pdf",
+    datasheetUrl: "/datasheets/OD800L.pdf",
     specs: [
       { name: "Peak Wavelength", value: "810", unit: "nm" },
       { name: "Radiant Power", value: "3", unit: "mW" },
@@ -86,7 +86,7 @@ export const emissionProducts: Product[] = [
       "810 nm near-infrared LED in a hermetically sealed TO-46 package with focused narrow-angle beam. Radiation-hardened GaAlAs construction for long-range illumination.",
     shortDescription: "810 nm focused NIR LED, radiation hardened",
     image: "/images/products/emission/od-800f.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD800FDS.pdf",
+    datasheetUrl: "/datasheets/OD800F.pdf",
     specs: [
       { name: "Peak Wavelength", value: "810", unit: "nm" },
       { name: "Radiant Power", value: "3", unit: "mW" },
@@ -120,7 +120,8 @@ export const emissionProducts: Product[] = [
       "850 nm near-infrared LED in a hermetically sealed TO-46 package with wide-angle emission. GaAlAs construction delivers 40 mW radiant power for security, surveillance, and machine vision.",
     shortDescription: "850 nm wide-angle NIR LED, 40 mW",
     image: "/images/products/emission/od-850w.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD850WDS.pdf",
+    datasheetUrl: "/datasheets/OD850W.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/OD-850W/2931612",
     specs: [
       { name: "Peak Wavelength", value: "850", unit: "nm" },
       { name: "Radiant Power", value: "40", unit: "mW" },
@@ -156,7 +157,8 @@ export const emissionProducts: Product[] = [
       "850 nm near-infrared LED in a hermetically sealed TO-46 package with wide-angle emission. High-temperature rated for operation in extreme thermal environments.",
     shortDescription: "850 nm wide-angle NIR LED, high temperature",
     image: "/images/products/emission/od-850wht.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD850WHTDS.pdf",
+    datasheetUrl: "/datasheets/OD850WHT.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/OD-850WHT/4047459",
     specs: [
       { name: "Peak Wavelength", value: "850", unit: "nm" },
       { name: "Radiant Power", value: "26", unit: "mW" },
@@ -190,7 +192,8 @@ export const emissionProducts: Product[] = [
       "850 nm near-infrared LED in a hermetically sealed TO-46 package with focused narrow-angle beam. 30 mW output ideal for long-range IR illumination and targeting.",
     shortDescription: "850 nm focused NIR LED, 30 mW",
     image: "/images/products/emission/od-850f.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD850FDS.pdf",
+    datasheetUrl: "/datasheets/OD850F.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/OD-850F/3283578",
     specs: [
       { name: "Peak Wavelength", value: "850", unit: "nm" },
       { name: "Radiant Power", value: "30", unit: "mW" },
@@ -224,7 +227,8 @@ export const emissionProducts: Product[] = [
       "850 nm near-infrared LED in a hermetically sealed TO-46 package with focused narrow-angle beam. High-temperature rated for extreme thermal environments.",
     shortDescription: "850 nm focused NIR LED, high temperature",
     image: "/images/products/emission/od-850fht.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD850FHTDS.pdf",
+    datasheetUrl: "/datasheets/OD850FHT.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/OD-850FHT/4047461",
     specs: [
       { name: "Peak Wavelength", value: "850", unit: "nm" },
       { name: "Radiant Power", value: "22", unit: "mW" },
@@ -258,7 +262,8 @@ export const emissionProducts: Product[] = [
       "850 nm near-infrared LED in a hermetically sealed TO-46 package with medium-angle lens. 35 mW output for proximity sensing, security, and industrial applications.",
     shortDescription: "850 nm medium-angle NIR LED, 35 mW",
     image: "/images/products/emission/od-850l.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD850LDS.pdf",
+    datasheetUrl: "/datasheets/OD850L.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/OD-850L/2931613",
     specs: [
       { name: "Peak Wavelength", value: "850", unit: "nm" },
       { name: "Radiant Power", value: "35", unit: "mW" },
@@ -292,7 +297,8 @@ export const emissionProducts: Product[] = [
       "850 nm near-infrared LED in a hermetically sealed TO-46 package with medium-angle lens. High-temperature rated for operation in extreme thermal environments.",
     shortDescription: "850 nm medium-angle NIR LED, high temperature",
     image: "/images/products/emission/od-850lht.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD850LHTDS.pdf",
+    datasheetUrl: "/datasheets/OD850LHT.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/OD-850LHT/4047460",
     specs: [
       { name: "Peak Wavelength", value: "850", unit: "nm" },
       { name: "Radiant Power", value: "22", unit: "mW" },
@@ -332,7 +338,8 @@ export const emissionProducts: Product[] = [
       "High-power 850 nm near-infrared LED in a hermetically sealed TO-39 package with narrow-angle beam. 100 mW radiant power for long-range illumination and active IR imaging.",
     shortDescription: "850 nm high-power NIR LED, 100 mW, narrow angle",
     image: "/images/products/emission/od-110l.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD110LDS.pdf",
+    datasheetUrl: "/datasheets/OD110L.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/OD-110L/3283575",
     specs: [
       { name: "Peak Wavelength", value: "850", unit: "nm" },
       { name: "Radiant Power", value: "100", unit: "mW" },
@@ -366,7 +373,7 @@ export const emissionProducts: Product[] = [
       "High-power 880 nm near-infrared LED in a hermetically sealed TO-39 package with narrow-angle beam. Electrically isolated and high-temperature rated for demanding environments.",
     shortDescription: "880 nm high-power NIR LED, isolated, high temp, narrow",
     image: "/images/products/emission/od-110lisolht.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD110LISOLHTDS.pdf",
+    datasheetUrl: "/datasheets/OD110LISOLHT.pdf",
     specs: [
       { name: "Peak Wavelength", value: "880", unit: "nm" },
       { name: "Radiant Power", value: "100", unit: "mW" },
@@ -402,7 +409,8 @@ export const emissionProducts: Product[] = [
       "High-power 850 nm near-infrared LED in a hermetically sealed TO-39 package with wide-angle emission. 140 mW radiant power for area illumination and proximity sensing.",
     shortDescription: "850 nm high-power NIR LED, 140 mW, wide angle",
     image: "/images/products/emission/od-110w.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD110WDS.pdf",
+    datasheetUrl: "/datasheets/OD110W.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/OD-110W/3283576",
     specs: [
       { name: "Peak Wavelength", value: "850", unit: "nm" },
       { name: "Radiant Power", value: "140", unit: "mW" },
@@ -436,7 +444,7 @@ export const emissionProducts: Product[] = [
       "High-power 880 nm near-infrared LED in a hermetically sealed TO-39 package with wide-angle emission. Electrically isolated and high-temperature rated for demanding environments.",
     shortDescription: "880 nm high-power NIR LED, isolated, high temp, wide",
     image: "/images/products/emission/od-110wisolht.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD110WISOLHTDS.pdf",
+    datasheetUrl: "/datasheets/OD110WISOLHT.pdf",
     specs: [
       { name: "Peak Wavelength", value: "880", unit: "nm" },
       { name: "Radiant Power", value: "120", unit: "mW" },
@@ -472,7 +480,8 @@ export const emissionProducts: Product[] = [
       "High-power 850 nm near-infrared LED delivering 250 mW DC from a single chip in a hermetically sealed TO-39 package. Wide-angle emission for high-intensity IR illumination.",
     shortDescription: "850 nm high-power NIR LED, 250 mW",
     image: "/images/products/emission/od-250.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD250DS.pdf",
+    datasheetUrl: "/datasheets/OD250.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/OD-250/3283577",
     specs: [
       { name: "Peak Wavelength", value: "850", unit: "nm" },
       { name: "Radiant Power", value: "250", unit: "mW" },
@@ -507,7 +516,8 @@ export const emissionProducts: Product[] = [
       "High-power 880 nm near-infrared LED array delivering 425 mW in a rugged TO-66 package. Multi-chip design for demanding military and industrial illumination applications.",
     shortDescription: "880 nm high-power NIR LED array, 425 mW, TO-66",
     image: "/images/products/emission/od-663.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD663DS.pdf",
+    datasheetUrl: "/datasheets/OD663.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/OD-880-015/2347732",
     specs: [
       { name: "Peak Wavelength", value: "880", unit: "nm" },
       { name: "Radiant Power", value: "425", unit: "mW" },
@@ -540,7 +550,7 @@ export const emissionProducts: Product[] = [
       "High-power 850 nm near-infrared LED array delivering 425 mW in a rugged TO-66 package. Multi-chip design optimized for 850 nm night vision and surveillance systems.",
     shortDescription: "850 nm high-power NIR LED array, 425 mW, TO-66",
     image: "/images/products/emission/od-663-850.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD663-850DS.pdf",
+    datasheetUrl: "/datasheets/OD663-850.pdf",
     specs: [
       { name: "Peak Wavelength", value: "850", unit: "nm" },
       { name: "Radiant Power", value: "425", unit: "mW" },
@@ -573,7 +583,8 @@ export const emissionProducts: Product[] = [
       "High-power 880 nm near-infrared LED array delivering 330 mW in a rugged TO-66 package. Multi-chip design for military and industrial IR illumination.",
     shortDescription: "880 nm high-power NIR LED array, 330 mW, TO-66",
     image: "/images/products/emission/od-666.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD666DS.pdf",
+    datasheetUrl: "/datasheets/OD666.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/OD-666/2347733",
     specs: [
       { name: "Peak Wavelength", value: "880", unit: "nm" },
       { name: "Radiant Power", value: "330", unit: "mW" },
@@ -605,7 +616,8 @@ export const emissionProducts: Product[] = [
       "High-power 880 nm near-infrared LED array delivering 500 mW in a rugged TO-66 package. High-output multi-chip design for maximum IR illumination.",
     shortDescription: "880 nm high-power NIR LED array, 500 mW, TO-66",
     image: "/images/products/emission/od-669.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD669DS.pdf",
+    datasheetUrl: "/datasheets/OD669.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/OD-669/2347734",
     specs: [
       { name: "Peak Wavelength", value: "880", unit: "nm" },
       { name: "Radiant Power", value: "500", unit: "mW" },
@@ -638,7 +650,7 @@ export const emissionProducts: Product[] = [
       "Ultra-high-power 850 nm near-infrared LED array delivering 1250 mW DC in a rugged TO-66 package. Highest output emitter in the Opto Diode LED portfolio.",
     shortDescription: "850 nm ultra-high-power NIR LED, 1250 mW, TO-66",
     image: "/images/products/emission/od-669-850.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD669-850DS.pdf",
+    datasheetUrl: "/datasheets/OD669-850.pdf",
     specs: [
       { name: "Peak Wavelength", value: "850", unit: "nm" },
       { name: "Radiant Power", value: "1250", unit: "mW" },
@@ -678,7 +690,7 @@ export const emissionProducts: Product[] = [
       "Deep red 685 nm LED in a compact SMD package. High reliability with narrow emission spectra, ideal for medical instrumentation, industrial indicators, and spectroscopic applications.",
     shortDescription: "685 nm deep red SMD LED",
     image: "/images/products/emission/od-685c.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD685CDS.pdf",
+    datasheetUrl: "/datasheets/OD685C.pdf",
     specs: [
       { name: "Peak Wavelength", value: "685", unit: "nm" },
       { name: "Radiant Power", value: "2", unit: "mW" },
@@ -712,7 +724,8 @@ export const emissionProducts: Product[] = [
       "High-output 624 nm red-orange LED in a hermetically sealed TO-39 package. 170 mW radiant power with AlInGaP construction for demanding industrial and aerospace applications.",
     shortDescription: "624 nm high-output red LED, 170 mW, TO-39",
     image: "/images/products/emission/od-624l.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD624LDS.pdf",
+    datasheetUrl: "/datasheets/OD624L.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/OD-624-001/18083415",
     specs: [
       { name: "Peak Wavelength", value: "624", unit: "nm" },
       { name: "Radiant Power", value: "170", unit: "mW" },
@@ -745,7 +758,8 @@ export const emissionProducts: Product[] = [
       "High-output 469 nm blue LED in a hermetically sealed TO-39 package. 170 mW radiant power with InGaN construction for medical, industrial, and analytical applications.",
     shortDescription: "469 nm high-output blue LED, 170 mW, TO-39",
     image: "/images/products/emission/od-469l.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/OD469LDS.pdf",
+    datasheetUrl: "/datasheets/OD469L.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/OD-469L/2347728",
     specs: [
       { name: "Peak Wavelength", value: "469", unit: "nm" },
       { name: "Radiant Power", value: "170", unit: "mW" },
@@ -784,7 +798,7 @@ export const emissionProducts: Product[] = [
       "Steady-state broadband infrared emitter in a TO-8 package with sapphire window. 0.727 mm² emitter area with 0.70 emissivity for NDIR gas sensing and spectroscopy.",
     shortDescription: "Steady-state IR emitter, TO-8, sapphire window, 0.727 mm²",
     image: "/images/products/emission/sa727-8m2.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/SA-Emitters-DS.pdf",
+    datasheetUrl: "/datasheets/SA-Emitters.pdf",
     specs: [
       { name: "Spectral Range", value: "2–5", unit: "µm" },
       { name: "Emitter Area", value: "0.727", unit: "mm²" },
@@ -820,7 +834,7 @@ export const emissionProducts: Product[] = [
       "Steady-state broadband infrared emitter in a TO-5 package with BaF₂ window. 0.727 mm² emitter area with extended spectral range to 12 µm.",
     shortDescription: "Steady-state IR emitter, TO-5, BaF₂ window, 0.727 mm²",
     image: "/images/products/emission/sa727-5m3.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/SA-Emitters-DS.pdf",
+    datasheetUrl: "/datasheets/SA-Emitters.pdf",
     specs: [
       { name: "Spectral Range", value: "2–12", unit: "µm" },
       { name: "Emitter Area", value: "0.727", unit: "mm²" },
@@ -855,7 +869,7 @@ export const emissionProducts: Product[] = [
       "Steady-state broadband infrared emitter in a TO-5 package with sapphire window. 0.727 mm² emitter area for NDIR gas sensing and spectroscopy.",
     shortDescription: "Steady-state IR emitter, TO-5, sapphire window, 0.727 mm²",
     image: "/images/products/emission/sa727-5m2.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/SA-Emitters-DS.pdf",
+    datasheetUrl: "/datasheets/SA-Emitters.pdf",
     specs: [
       { name: "Spectral Range", value: "2–5", unit: "µm" },
       { name: "Emitter Area", value: "0.727", unit: "mm²" },
@@ -890,7 +904,7 @@ export const emissionProducts: Product[] = [
       "Steady-state broadband infrared emitter in a TO-8 package with BaF₂ window. Large 10.510 mm² emitter area for maximum radiant output and extended spectral range.",
     shortDescription: "Steady-state IR emitter, TO-8, BaF₂ window, 10.510 mm²",
     image: "/images/products/emission/sa10510-8m3.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/SA-Emitters-DS.pdf",
+    datasheetUrl: "/datasheets/SA-Emitters.pdf",
     specs: [
       { name: "Spectral Range", value: "2–12", unit: "µm" },
       { name: "Emitter Area", value: "10.510", unit: "mm²" },
@@ -926,7 +940,7 @@ export const emissionProducts: Product[] = [
       "Steady-state broadband infrared emitter in a TO-8 package with sapphire window. Large 10.510 mm² emitter area for maximum radiant output in the 2–5 µm range.",
     shortDescription: "Steady-state IR emitter, TO-8, sapphire window, 10.510 mm²",
     image: "/images/products/emission/sa10510-8m2.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/SA-Emitters-DS.pdf",
+    datasheetUrl: "/datasheets/SA-Emitters.pdf",
     specs: [
       { name: "Spectral Range", value: "2–5", unit: "µm" },
       { name: "Emitter Area", value: "10.510", unit: "mm²" },
@@ -961,7 +975,7 @@ export const emissionProducts: Product[] = [
       "Steady-state broadband infrared emitter in a TO-5 package with BaF₂ window. 1.037 mm² emitter area with extended spectral range for gas detection and analysis.",
     shortDescription: "Steady-state IR emitter, TO-5, BaF₂ window, 1.037 mm²",
     image: "/images/products/emission/sa1037-5m3.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/SA-Emitters-DS.pdf",
+    datasheetUrl: "/datasheets/SA-Emitters.pdf",
     specs: [
       { name: "Spectral Range", value: "2–12", unit: "µm" },
       { name: "Emitter Area", value: "1.037", unit: "mm²" },
@@ -996,7 +1010,7 @@ export const emissionProducts: Product[] = [
       "Steady-state broadband infrared emitter in a TO-5 package with sapphire window. 1.037 mm² emitter area for NDIR gas sensing and spectroscopy.",
     shortDescription: "Steady-state IR emitter, TO-5, sapphire window, 1.037 mm²",
     image: "/images/products/emission/sa1037-5m2.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/SA-Emitters-DS.pdf",
+    datasheetUrl: "/datasheets/SA-Emitters.pdf",
     specs: [
       { name: "Spectral Range", value: "2–5", unit: "µm" },
       { name: "Emitter Area", value: "1.037", unit: "mm²" },
@@ -1037,7 +1051,7 @@ export const emissionProducts: Product[] = [
       "High-power steady-state broadband infrared emitter in a windowless TO-5 package. 0.727 mm² emitter area with maximum output — no window attenuation for full-spectrum emission.",
     shortDescription: "High-power steady-state IR emitter, TO-5, windowless, 0.727 mm²",
     image: "/images/products/emission/sha727-5m0.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/SHA-Emitters-DS.pdf",
+    datasheetUrl: "/datasheets/SHA-Emitters.pdf",
     specs: [
       { name: "Spectral Range", value: "Full broadband", unit: "" },
       { name: "Emitter Area", value: "0.727", unit: "mm²" },
@@ -1072,7 +1086,7 @@ export const emissionProducts: Product[] = [
       "High-power steady-state broadband infrared emitter in a windowless TO-5 package. 1.037 mm² emitter area for maximum output in applications requiring unfiltered broadband IR.",
     shortDescription: "High-power steady-state IR emitter, TO-5, windowless, 1.037 mm²",
     image: "/images/products/emission/sha1037-5m0.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/SHA-Emitters-DS.pdf",
+    datasheetUrl: "/datasheets/SHA-Emitters.pdf",
     specs: [
       { name: "Spectral Range", value: "Full broadband", unit: "" },
       { name: "Emitter Area", value: "1.037", unit: "mm²" },
@@ -1113,7 +1127,7 @@ export const emissionProducts: Product[] = [
       "Pulsable broadband infrared emitter in a TO-8 package with BaF₂ window. Thin metallic foil design with 3.60 mm² emitter area and 0.88 emissivity for modulated gas sensing.",
     shortDescription: "Pulsable IR emitter, TO-8, BaF₂ window, 3.60 mm²",
     image: "/images/products/emission/svf360-8m3.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/SVF-Emitters-DS.pdf",
+    datasheetUrl: "/datasheets/SVF-Emitters.pdf",
     specs: [
       { name: "Spectral Range", value: "2–12", unit: "µm" },
       { name: "Emitter Area", value: "3.60", unit: "mm²" },
@@ -1151,7 +1165,7 @@ export const emissionProducts: Product[] = [
       "Pulsable broadband infrared emitter in a TO-8 package with sapphire window. Thin metallic foil design with 3.60 mm² emitter area and 0.88 emissivity.",
     shortDescription: "Pulsable IR emitter, TO-8, sapphire window, 3.60 mm²",
     image: "/images/products/emission/svf360-8m2.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/SVF-Emitters-DS.pdf",
+    datasheetUrl: "/datasheets/SVF-Emitters.pdf",
     specs: [
       { name: "Spectral Range", value: "2–5", unit: "µm" },
       { name: "Emitter Area", value: "3.60", unit: "mm²" },
@@ -1187,7 +1201,7 @@ export const emissionProducts: Product[] = [
       "Pulsable broadband infrared emitter in a TO-8 package with BaF₂ window. 3.50 mm² emitter area with thin metallic foil design and 0.88 emissivity.",
     shortDescription: "Pulsable IR emitter, TO-8, BaF₂ window, 3.50 mm²",
     image: "/images/products/emission/svf350-8m3.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/SVF-Emitters-DS.pdf",
+    datasheetUrl: "/datasheets/SVF-Emitters.pdf",
     specs: [
       { name: "Spectral Range", value: "2–12", unit: "µm" },
       { name: "Emitter Area", value: "3.50", unit: "mm²" },
@@ -1223,7 +1237,7 @@ export const emissionProducts: Product[] = [
       "Pulsable broadband infrared emitter in a TO-5 package with BaF₂ window. Compact form factor with 3.50 mm² emitter area for space-constrained gas sensing designs.",
     shortDescription: "Pulsable IR emitter, TO-5, BaF₂ window, 3.50 mm²",
     image: "/images/products/emission/svf350-5m3.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/SVF-Emitters-DS.pdf",
+    datasheetUrl: "/datasheets/SVF-Emitters.pdf",
     specs: [
       { name: "Spectral Range", value: "2–12", unit: "µm" },
       { name: "Emitter Area", value: "3.50", unit: "mm²" },
@@ -1259,7 +1273,7 @@ export const emissionProducts: Product[] = [
       "Pulsable broadband infrared emitter in a TO-5 package with sapphire window. Compact form factor with 3.50 mm² emitter area for NDIR gas sensing.",
     shortDescription: "Pulsable IR emitter, TO-5, sapphire window, 3.50 mm²",
     image: "/images/products/emission/svf350-5m2.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/SVF-Emitters-DS.pdf",
+    datasheetUrl: "/datasheets/SVF-Emitters.pdf",
     specs: [
       { name: "Spectral Range", value: "2–5", unit: "µm" },
       { name: "Emitter Area", value: "3.50", unit: "mm²" },
@@ -1295,7 +1309,7 @@ export const emissionProducts: Product[] = [
       "Pulsable broadband infrared emitter in a TO-5 package with BaF₂ window. Compact 2.30 mm² emitter area for miniature NDIR gas sensing modules.",
     shortDescription: "Pulsable IR emitter, TO-5, BaF₂ window, 2.30 mm²",
     image: "/images/products/emission/svf230-5m3.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/SVF-Emitters-DS.pdf",
+    datasheetUrl: "/datasheets/SVF-Emitters.pdf",
     specs: [
       { name: "Spectral Range", value: "2–12", unit: "µm" },
       { name: "Emitter Area", value: "2.30", unit: "mm²" },
@@ -1331,7 +1345,7 @@ export const emissionProducts: Product[] = [
       "Pulsable broadband infrared emitter in a TO-5 package with sapphire window. Compact 2.30 mm² emitter area for miniature gas sensing applications.",
     shortDescription: "Pulsable IR emitter, TO-5, sapphire window, 2.30 mm²",
     image: "/images/products/emission/svf230-5m2.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/SVF-Emitters-DS.pdf",
+    datasheetUrl: "/datasheets/SVF-Emitters.pdf",
     specs: [
       { name: "Spectral Range", value: "2–5", unit: "µm" },
       { name: "Emitter Area", value: "2.30", unit: "mm²" },
@@ -1373,7 +1387,7 @@ export const emissionProducts: Product[] = [
       "PIRE PLUS high-speed pulsable infrared emitter in a TO-5 package. Ultra-fast thermal time constant enables high-frequency modulation for advanced NDIR gas sensing.",
     shortDescription: "PIRE PLUS high-speed IR emitter, TO-5",
     image: "/images/products/emission/spf220-5m2.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/SPF-Emitters-DS-1.pdf",
+    datasheetUrl: "/datasheets/SPF-Emitters.pdf",
     specs: [
       { name: "Spectral Range", value: "2–12", unit: "µm" },
       { name: "Emitter Area", value: "2.20", unit: "mm²" },
@@ -1411,7 +1425,7 @@ export const emissionProducts: Product[] = [
       "PIRE PLUS high-speed pulsable infrared emitter in a TO-5 package with integrated heatsink. Heatsink enables extended high-duty-cycle operation for demanding applications.",
     shortDescription: "PIRE PLUS high-speed IR emitter, TO-5 with heatsink",
     image: "/images/products/emission/spf220-5m2h.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/SPF-Emitters-DS-1.pdf",
+    datasheetUrl: "/datasheets/SPF-Emitters.pdf",
     specs: [
       { name: "Spectral Range", value: "2–12", unit: "µm" },
       { name: "Emitter Area", value: "2.20", unit: "mm²" },
@@ -1447,7 +1461,7 @@ export const emissionProducts: Product[] = [
       "Complete PIRE PLUS evaluation kit including high-speed pulsable emitter, heatsink, and driver/controller PCB. Enables rapid prototyping and characterization of PIRE PLUS emitters.",
     shortDescription: "PIRE PLUS evaluation kit with emitter, heatsink & driver",
     image: "/images/products/emission/pireplus-eval.jpg",
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/SPF-Emitters-DS-1.pdf",
+    datasheetUrl: "/datasheets/SPF-Emitters.pdf",
     specs: [
       { name: "Included Emitter", value: "SPF220-5M2", unit: "" },
       { name: "Spectral Range", value: "2–12", unit: "µm" },

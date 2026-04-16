@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Scan, Lightbulb, Settings, Search } from "lucide-react";
+import { ArrowRight, Scan, Lightbulb, Settings, Search, BookOpen } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { ScrollReveal } from "@/components/common/ScrollReveal";
@@ -98,10 +98,20 @@ export default function ProductsPage() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mb-4">
               Our Products
             </h1>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground mb-6">
               Detection. Emission. Integration. — Comprehensive photonic
               solutions engineered for the most demanding environments.
             </p>
+            <a
+              href="/datasheets/ODC-Product-Catalog.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg border border-border bg-card/60 hover:bg-card hover:border-primary/40 px-4 py-2.5 text-sm font-medium text-foreground transition-colors"
+            >
+              <BookOpen className="w-4 h-4 text-primary" />
+              Download Product Catalog
+              <ArrowRight className="w-3.5 h-3.5 text-muted-foreground" />
+            </a>
           </div>
         </Container>
       </section>

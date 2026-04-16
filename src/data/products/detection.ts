@@ -35,7 +35,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor"],
     relatedProducts: ["sxuvps4c", "sxuv5"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/SXUVPS4DS.pdf",
+    datasheetUrl: "/datasheets/SXUVPS4.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/SXUVPS4/4486138",
   },
   {
     id: "sxuvps4c",
@@ -66,7 +67,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor"],
     relatedProducts: ["sxuvps4", "sxuv20c"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/SXUVPS4CDS.pdf",
+    datasheetUrl: "/datasheets/SXUVPS4C.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/SXUVPS4C/4047472",
   },
   {
     id: "sxuv5",
@@ -101,7 +103,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor", "aerospace-defense"],
     relatedProducts: ["sxuv20hs1", "sxuv100"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/SXUV5DS.pdf",
+    datasheetUrl: "/datasheets/SXUV5.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/SXUV5/4047462",
   },
   {
     id: "sxuv20hs1",
@@ -137,7 +140,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor"],
     relatedProducts: ["sxuv5", "sxuv20c"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/09/SXUV20HS1DS.pdf",
+    datasheetUrl: "/datasheets/SXUV20HS1.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/SXUV20HS1/4486137",
     isFeatured: true,
   },
   {
@@ -171,7 +175,7 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor"],
     relatedProducts: ["sxuv20hs1", "sxuv100"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/SXUV20CDS.pdf",
+    datasheetUrl: "/datasheets/SXUV20C.pdf",
   },
   {
     id: "sxuv100",
@@ -205,7 +209,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor"],
     relatedProducts: ["sxuv100tf135", "sxuv300c"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/SXUV100DS.pdf",
+    datasheetUrl: "/datasheets/SXUV100.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/SXUV100/4047470",
     isFeatured: true,
   },
   {
@@ -240,7 +245,7 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor"],
     relatedProducts: ["sxuv100", "sxuv300c"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/SXUV100TF135DS.pdf",
+    datasheetUrl: "/datasheets/SXUV100TF135.pdf",
     isFeatured: true,
   },
   {
@@ -274,7 +279,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor", "aerospace-defense"],
     relatedProducts: ["sxuv100", "sxuv100tf135"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/SXUV300CDS.pdf",
+    datasheetUrl: "/datasheets/SXUV300C.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/SXUV300C/4047471",
   },
 
   // ─── AXUV Series (100% IQE, 0.01–190 nm) ─────────────────────────
@@ -313,7 +319,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor", "aerospace-defense"],
     relatedProducts: ["axuv20a", "axuv100g"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/AXUV20HS1DS.pdf",
+    datasheetUrl: "/datasheets/AXUV20HS1.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/AXUV20HS1/4486136",
   },
   {
     id: "axuv20a",
@@ -347,7 +354,7 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor", "aerospace-defense"],
     relatedProducts: ["axuv20hs1", "axuv100g"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/AXUV20ADS.pdf",
+    datasheetUrl: "/datasheets/AXUV20A.pdf",
   },
   {
     id: "axuv63hs1",
@@ -380,7 +387,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor", "aerospace-defense"],
     relatedProducts: ["axuv63hs1-ch", "axuv100g"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/AXUV63HS1DS-1.pdf",
+    datasheetUrl: "/datasheets/AXUV63HS1.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/AXUV63HS1/3782861",
   },
   {
     id: "axuv63hs1-ch",
@@ -413,7 +421,7 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor"],
     relatedProducts: ["axuv63hs1", "axuv100g"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/AXUV63HS1-CHDS-1.pdf",
+    datasheetUrl: "/datasheets/AXUV63HS1-CH.pdf",
   },
   {
     id: "axuv100g",
@@ -449,7 +457,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor", "aerospace-defense"],
     relatedProducts: ["axuv100tf030", "axuv100tf400"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/AXUV100GDS.pdf",
+    datasheetUrl: "/datasheets/AXUV100G.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/AXUV100G/2931615",
     isFeatured: true,
   },
   {
@@ -482,7 +491,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor"],
     relatedProducts: ["axuv100g", "axuv100tf400"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/AXUV100TF030DS.pdf",
+    datasheetUrl: "/datasheets/AXUV100TF030.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/AXUV100TF030/4047463",
   },
   {
     id: "axuv100tf400",
@@ -514,7 +524,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor"],
     relatedProducts: ["axuv100g", "axuv100tf030"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/AXUV100TF400DS.pdf",
+    datasheetUrl: "/datasheets/AXUV100TF400.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/AXUV100TF400/4047474",
   },
   {
     id: "axuvps7",
@@ -546,7 +557,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor", "aerospace-defense"],
     relatedProducts: ["axuv100g", "axuv20a"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/AXUVPS7DS-.pdf",
+    datasheetUrl: "/datasheets/AXUVPS7.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/AXUVPS7/3782857",
   },
   {
     id: "axuv300c",
@@ -578,7 +590,7 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor", "aerospace-defense"],
     relatedProducts: ["axuv576c", "axuv100g"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/AXUV300CDS.pdf",
+    datasheetUrl: "/datasheets/AXUV300C.pdf",
   },
   {
     id: "axuv576c",
@@ -611,7 +623,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor", "aerospace-defense"],
     relatedProducts: ["axuv300c", "axuv100g"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/AXUV576CDS.pdf",
+    datasheetUrl: "/datasheets/AXUV576C.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/AXUV576C/4486135",
   },
   {
     id: "axuv16elg",
@@ -643,7 +656,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor", "aerospace-defense"],
     relatedProducts: ["axuv20elg", "axuv16elcs"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/AXUV16ELGDS.pdf",
+    datasheetUrl: "/datasheets/AXUV16ELG.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/AXUV16ELG/3782859",
   },
   {
     id: "axuv20elg",
@@ -675,7 +689,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["semiconductor", "aerospace-defense"],
     relatedProducts: ["axuv16elg", "axuv20elcs"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/AXUV20ELGDS.pdf",
+    datasheetUrl: "/datasheets/AXUV20ELG.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/AXUV20ELG/3782858",
   },
   // AXUV Sockets
   {
@@ -797,7 +812,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["medical", "industrial"],
     relatedProducts: ["uvg12", "uvg20c"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/UVG5SDS.pdf",
+    datasheetUrl: "/datasheets/UVG5S.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/UVG5S/4486140",
   },
   {
     id: "uvg12",
@@ -829,7 +845,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["medical", "industrial"],
     relatedProducts: ["uvg5s", "uvg20c"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/UVG12DS.pdf",
+    datasheetUrl: "/datasheets/UVG12.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/UVG12/4486141",
   },
   {
     id: "uvg20c",
@@ -861,7 +878,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["medical", "industrial"],
     relatedProducts: ["uvg20s", "uvg100"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/UVG20CDS.pdf",
+    datasheetUrl: "/datasheets/UVG20C.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/UVG20C/4899716",
   },
   {
     id: "uvg20s",
@@ -893,7 +911,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["medical", "industrial"],
     relatedProducts: ["uvg20c", "uvg100"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/UVG20SDS.pdf",
+    datasheetUrl: "/datasheets/UVG20S.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/UVG20S/4486142",
   },
   {
     id: "uvg100",
@@ -928,7 +947,8 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["medical", "industrial"],
     relatedProducts: ["uvg20c", "uvg20s"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/UVG100DS.pdf",
+    datasheetUrl: "/datasheets/UVG100.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/UVG100/4047473",
     isFeatured: true,
   },
 
@@ -960,7 +980,8 @@ export const detectionProducts: Product[] = [
     features: ["Blue-enhanced response", "Compact TO-18", "Low noise"],
     applications: ["medical", "industrial"],
     relatedProducts: ["odd-1wb", "odd-5wb"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/ODD-1BDS.pdf",
+    datasheetUrl: "/datasheets/ODD-1B.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/ODD-1B/2397142",
   },
   {
     id: "odd-1wb",
@@ -986,7 +1007,8 @@ export const detectionProducts: Product[] = [
     features: ["Blue-enhanced response", "Wide-angle window", "Compact TO-18"],
     applications: ["medical", "industrial"],
     relatedProducts: ["odd-1b", "odd-5wb"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/ODD-1WBDS.pdf",
+    datasheetUrl: "/datasheets/ODD-1WB.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/ODD-1WB/2397143",
   },
   {
     id: "odd-5wb",
@@ -1014,7 +1036,8 @@ export const detectionProducts: Product[] = [
     features: ["Blue-enhanced response", "Hermetically sealed", "High reliability"],
     applications: ["medical", "industrial"],
     relatedProducts: ["odd-5wbisol", "odd-12wb"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/ODD-5WBDS.pdf",
+    datasheetUrl: "/datasheets/ODD-5WB.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/ODD-5WB/2397146",
   },
   {
     id: "odd-5wbisol",
@@ -1041,7 +1064,8 @@ export const detectionProducts: Product[] = [
     features: ["Electrically isolated case", "Blue-enhanced", "Hermetically sealed"],
     applications: ["medical", "industrial"],
     relatedProducts: ["odd-5wb", "odd-12wb"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/ODD-5WBISOLDS.pdf",
+    datasheetUrl: "/datasheets/ODD-5WBISOL.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/ODD-5WBISOL/2397146",
   },
   {
     id: "odd-12wb",
@@ -1067,7 +1091,7 @@ export const detectionProducts: Product[] = [
     features: ["Blue-enhanced response", "Large active area", "Hermetically sealed"],
     applications: ["medical", "industrial"],
     relatedProducts: ["odd-5wb", "odd-15wb"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/ODD-12WBDS.pdf",
+    datasheetUrl: "/datasheets/ODD-12WB.pdf",
   },
   {
     id: "odd-15wb",
@@ -1093,7 +1117,7 @@ export const detectionProducts: Product[] = [
     features: ["Blue-enhanced response", "Compact high-area design", "Hermetically sealed"],
     applications: ["medical", "industrial"],
     relatedProducts: ["odd-12wb", "odd-42wb"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/ODD-15WBDS.pdf",
+    datasheetUrl: "/datasheets/ODD-15WB.pdf",
   },
   {
     id: "odd-42wb",
@@ -1119,7 +1143,7 @@ export const detectionProducts: Product[] = [
     features: ["Largest blue-enhanced area", "Hermetically sealed", "High collection efficiency"],
     applications: ["medical", "industrial"],
     relatedProducts: ["odd-15wb", "odd-12wb"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/ODD-42WBDS.pdf",
+    datasheetUrl: "/datasheets/ODD-42WB.pdf",
   },
 
   // ─── Red Enhanced Photodiodes (400–1100 nm) ───────────────────────
@@ -1149,7 +1173,8 @@ export const detectionProducts: Product[] = [
     features: ["Bi-cell configuration", "Position sensing", "Red/NIR enhanced"],
     applications: ["industrial"],
     relatedProducts: ["odd-1", "odd-1w"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/ODD-3W-2DS.pdf",
+    datasheetUrl: "/datasheets/ODD-3W-2.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/ODD-3W-2/2347748",
   },
   {
     id: "odd-1",
@@ -1177,7 +1202,8 @@ export const detectionProducts: Product[] = [
     features: ["Extended NIR sensitivity", "Red-enhanced response", "Compact TO-18"],
     applications: ["industrial", "medical"],
     relatedProducts: ["odd-1w", "odd-5w"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/ODD-1DS.pdf",
+    datasheetUrl: "/datasheets/ODD-1.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/ODD-1/2347745",
   },
   {
     id: "odd-1w",
@@ -1203,7 +1229,8 @@ export const detectionProducts: Product[] = [
     features: ["Wide-angle window", "Red-enhanced response", "Compact TO-18"],
     applications: ["industrial", "medical"],
     relatedProducts: ["odd-1", "odd-5w"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/ODD-1WDS.pdf",
+    datasheetUrl: "/datasheets/ODD-1W.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/ODD-1W/2397144",
   },
   {
     id: "odd-5w",
@@ -1231,7 +1258,8 @@ export const detectionProducts: Product[] = [
     features: ["Red/NIR enhanced", "Hermetically sealed", "High responsivity at 900 nm"],
     applications: ["industrial", "medical"],
     relatedProducts: ["odd-5wisol", "odd-12w"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/ODD-5WDS.pdf",
+    datasheetUrl: "/datasheets/ODD-5W.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/ODD-5W/2347751",
   },
   {
     id: "odd-5wisol",
@@ -1258,7 +1286,8 @@ export const detectionProducts: Product[] = [
     features: ["Electrically isolated case", "Red/NIR enhanced", "Hermetically sealed"],
     applications: ["industrial", "medical"],
     relatedProducts: ["odd-5w", "odd-12w"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/ODD-5WISOLDS.pdf",
+    datasheetUrl: "/datasheets/ODD-5WISOL.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/ODD-5WISOL/2397145",
   },
   {
     id: "odd-12w",
@@ -1284,7 +1313,8 @@ export const detectionProducts: Product[] = [
     features: ["Red/NIR enhanced", "Large active area", "Hermetically sealed"],
     applications: ["industrial", "medical"],
     relatedProducts: ["odd-5w", "odd-15w"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/ODD-12WDS.pdf",
+    datasheetUrl: "/datasheets/ODD-12W.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/ODD-12W/2347746",
   },
   {
     id: "odd-15w",
@@ -1310,7 +1340,8 @@ export const detectionProducts: Product[] = [
     features: ["Red/NIR enhanced", "Compact high-area design", "Hermetically sealed"],
     applications: ["industrial", "medical"],
     relatedProducts: ["odd-12w", "odd-42w"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/ODD-15WDS.pdf",
+    datasheetUrl: "/datasheets/ODD-15W.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/ODD-15W/2397147",
   },
   {
     id: "odd-42w",
@@ -1336,7 +1367,8 @@ export const detectionProducts: Product[] = [
     features: ["Largest red-enhanced area", "Hermetically sealed", "Maximum NIR collection"],
     applications: ["industrial", "medical"],
     relatedProducts: ["odd-15w", "odd-12w"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/ODD-42WDS-.pdf",
+    datasheetUrl: "/datasheets/ODD-42W.pdf",
+    digikeyUrl: "https://www.digikey.com/en/products/detail/opto-diode-corp/ODD-632-006/18083384",
   },
 
   // ─── Preamp Modules (Photodiode + Preamplifier) ───────────────────
@@ -1367,7 +1399,7 @@ export const detectionProducts: Product[] = [
     features: ["Integrated preamplifier", "100 MHz bandwidth", "Red/NIR enhanced", "Direct digital readout"],
     applications: ["industrial", "medical"],
     relatedProducts: ["oda-6w-500m", "odd-5w"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/ODA-6W-100MDS.pdf",
+    datasheetUrl: "/datasheets/ODA-6W-100M.pdf",
   },
   {
     id: "oda-6w-500m",
@@ -1395,7 +1427,7 @@ export const detectionProducts: Product[] = [
     features: ["Integrated preamplifier", "500 MHz bandwidth", "Red/NIR enhanced", "High-speed acquisition"],
     applications: ["industrial", "medical"],
     relatedProducts: ["oda-6w-100m", "odd-5w"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/ODA-6W-500MDS.pdf",
+    datasheetUrl: "/datasheets/ODA-6W-500M.pdf",
   },
   {
     id: "oda-6wb-100m",
@@ -1423,7 +1455,7 @@ export const detectionProducts: Product[] = [
     features: ["Integrated preamplifier", "100 MHz bandwidth", "Blue/green enhanced", "Direct digital readout"],
     applications: ["medical", "industrial"],
     relatedProducts: ["oda-6wb-500m", "odd-5wb"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/ODA-6WB-100MDS.pdf",
+    datasheetUrl: "/datasheets/ODA-6WB-100M.pdf",
   },
   {
     id: "oda-6wb-500m",
@@ -1451,7 +1483,7 @@ export const detectionProducts: Product[] = [
     features: ["Integrated preamplifier", "500 MHz bandwidth", "Blue/green enhanced", "High-speed acquisition"],
     applications: ["medical", "industrial"],
     relatedProducts: ["oda-6wb-100m", "odd-5wb"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/02/ODA-6WB-500MDS.pdf",
+    datasheetUrl: "/datasheets/ODA-6WB-500M.pdf",
   },
 
   // ─── PbSe Detectors (1–5.5 µm) ──────────────────────────────────
@@ -1476,7 +1508,7 @@ export const detectionProducts: Product[] = [
     features: ["Room temperature operation", "Compact TO-18", "Cost-effective MIR detection"],
     applications: ["fire-flame-gas", "industrial", "food-analysis"],
     relatedProducts: ["bxp-25m", "bxp-35e"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/B-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/B-Series_IR-Detectors.pdf",
   },
   {
     id: "bxp-25m",
@@ -1498,7 +1530,7 @@ export const detectionProducts: Product[] = [
     features: ["Room temperature operation", "Larger 4 mm² active area", "Mid-IR optimized"],
     applications: ["fire-flame-gas", "industrial", "food-analysis"],
     relatedProducts: ["bxp-15e", "bxp-35e"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/B-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/B-Series_IR-Detectors.pdf",
     isFeatured: true,
   },
   {
@@ -1521,7 +1553,7 @@ export const detectionProducts: Product[] = [
     features: ["Room temperature operation", "Large 9 mm² active area"],
     applications: ["fire-flame-gas", "industrial", "food-analysis"],
     relatedProducts: ["bxp-35f", "bxp-25m"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/B-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/B-Series_IR-Detectors.pdf",
   },
   {
     id: "bxp-35f",
@@ -1544,7 +1576,7 @@ export const detectionProducts: Product[] = [
     features: ["Flat window configuration", "Room temperature operation", "Large active area"],
     applications: ["fire-flame-gas", "industrial"],
     relatedProducts: ["bxp-35e", "bxp-25m"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/B-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/B-Series_IR-Detectors.pdf",
   },
   {
     id: "bxt1-28te",
@@ -1566,7 +1598,7 @@ export const detectionProducts: Product[] = [
     features: ["1-stage thermoelectric cooling", "Enhanced D*", "Extended wavelength cutoff"],
     applications: ["fire-flame-gas", "industrial", "food-analysis"],
     relatedProducts: ["bxt1-37t", "bxt2-27"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/B-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/B-Series_IR-Detectors.pdf",
   },
   {
     id: "bxt1-37t",
@@ -1588,7 +1620,7 @@ export const detectionProducts: Product[] = [
     features: ["1-stage thermoelectric cooling", "Large 9 mm² area", "Enhanced D*"],
     applications: ["fire-flame-gas", "industrial", "food-analysis"],
     relatedProducts: ["bxt1-28te", "bxt2-37t"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/B-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/B-Series_IR-Detectors.pdf",
   },
   {
     id: "bxt2-17t",
@@ -1610,7 +1642,7 @@ export const detectionProducts: Product[] = [
     features: ["2-stage thermoelectric cooling", "Maximum D*", "Highest sensitivity"],
     applications: ["fire-flame-gas", "industrial", "food-analysis"],
     relatedProducts: ["bxt2-17tf", "bxt2-27"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/B-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/B-Series_IR-Detectors.pdf",
   },
   {
     id: "bxt2-17tf",
@@ -1633,7 +1665,7 @@ export const detectionProducts: Product[] = [
     features: ["2-stage thermoelectric cooling", "Fast response time", "Maximum D*"],
     applications: ["fire-flame-gas", "industrial"],
     relatedProducts: ["bxt2-17t", "bxt2-27"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/B-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/B-Series_IR-Detectors.pdf",
   },
   {
     id: "bxt2-27",
@@ -1655,7 +1687,7 @@ export const detectionProducts: Product[] = [
     features: ["2-stage thermoelectric cooling", "Balanced area/sensitivity", "Enhanced D*"],
     applications: ["fire-flame-gas", "industrial", "food-analysis"],
     relatedProducts: ["bxt2-17t", "bxt2-37t"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/B-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/B-Series_IR-Detectors.pdf",
   },
   {
     id: "bxt2-37t",
@@ -1677,7 +1709,7 @@ export const detectionProducts: Product[] = [
     features: ["2-stage thermoelectric cooling", "Large 9 mm² active area", "Maximum signal collection"],
     applications: ["fire-flame-gas", "industrial", "food-analysis"],
     relatedProducts: ["bxt2-27", "bxt2s-38t"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/B-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/B-Series_IR-Detectors.pdf",
   },
   {
     id: "bxt2s-28t",
@@ -1699,7 +1731,7 @@ export const detectionProducts: Product[] = [
     features: ["2-stage TE cooling", "Sealed package", "Field deployable"],
     applications: ["fire-flame-gas", "industrial"],
     relatedProducts: ["bxt2s-38t", "bxt2s-68te"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/B-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/B-Series_IR-Detectors.pdf",
   },
   {
     id: "bxt2s-38t",
@@ -1721,7 +1753,7 @@ export const detectionProducts: Product[] = [
     features: ["2-stage TE cooling", "Large area", "Sealed package"],
     applications: ["fire-flame-gas", "industrial", "food-analysis"],
     relatedProducts: ["bxt2s-28t", "bxt2s-68te"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/B-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/B-Series_IR-Detectors.pdf",
   },
   {
     id: "bxt2s-68te",
@@ -1743,7 +1775,7 @@ export const detectionProducts: Product[] = [
     features: ["Largest PbSe detector (36 mm²)", "2-stage TE cooling", "Maximum collection area", "Sealed package"],
     applications: ["fire-flame-gas", "industrial", "food-analysis"],
     relatedProducts: ["bxt2s-38t", "bxt2-37t"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/B-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/B-Series_IR-Detectors.pdf",
   },
 
   // ─── PbS Detectors (1–3.5 µm) ────────────────────────────────────
@@ -1768,7 +1800,7 @@ export const detectionProducts: Product[] = [
     features: ["Room temperature operation", "SWIR detection", "Compact TO-18"],
     applications: ["fire-flame-gas", "food-analysis", "industrial"],
     relatedProducts: ["ap-25g", "ap-20505"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/A-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/A-Series_IR-Detectors.pdf",
   },
   {
     id: "ap-25g",
@@ -1790,7 +1822,7 @@ export const detectionProducts: Product[] = [
     features: ["Room temperature operation", "4 mm² active area"],
     applications: ["fire-flame-gas", "food-analysis", "industrial"],
     relatedProducts: ["ap-15g", "ap-20505"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/A-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/A-Series_IR-Detectors.pdf",
   },
   {
     id: "ap-20505",
@@ -1812,7 +1844,7 @@ export const detectionProducts: Product[] = [
     features: ["Room temperature operation", "Large 10 mm² area", "High SNR"],
     applications: ["fire-flame-gas", "food-analysis", "industrial"],
     relatedProducts: ["ap-25g", "ap-58e"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/A-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/A-Series_IR-Detectors.pdf",
   },
   {
     id: "ap-58e",
@@ -1834,7 +1866,7 @@ export const detectionProducts: Product[] = [
     features: ["Room temperature", "Extra-large 25 mm² area"],
     applications: ["fire-flame-gas", "food-analysis", "industrial"],
     relatedProducts: ["ap-20505", "ap-68"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/A-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/A-Series_IR-Detectors.pdf",
   },
   {
     id: "ap-68",
@@ -1856,7 +1888,7 @@ export const detectionProducts: Product[] = [
     features: ["Largest uncooled PbS (36 mm²)", "Room temperature operation"],
     applications: ["fire-flame-gas", "food-analysis", "industrial"],
     relatedProducts: ["ap-58e", "at1-27te"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/A-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/A-Series_IR-Detectors.pdf",
   },
   {
     id: "at1-27te",
@@ -1878,7 +1910,7 @@ export const detectionProducts: Product[] = [
     features: ["1-stage TE cooling", "Enhanced detectivity", "Extended cutoff"],
     applications: ["fire-flame-gas", "food-analysis", "industrial"],
     relatedProducts: ["at1-37t", "at2-28te"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/A-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/A-Series_IR-Detectors.pdf",
   },
   {
     id: "at1-37t",
@@ -1900,7 +1932,7 @@ export const detectionProducts: Product[] = [
     features: ["1-stage TE cooling", "Large 9 mm² active area"],
     applications: ["fire-flame-gas", "food-analysis", "industrial"],
     relatedProducts: ["at1-27te", "at2-37t"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/A-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/A-Series_IR-Detectors.pdf",
   },
   {
     id: "at2-28te",
@@ -1922,7 +1954,7 @@ export const detectionProducts: Product[] = [
     features: ["2-stage TE cooling", "Maximum detectivity"],
     applications: ["fire-flame-gas", "food-analysis", "industrial"],
     relatedProducts: ["at2-37t", "at2s-38t"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/A-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/A-Series_IR-Detectors.pdf",
   },
   {
     id: "at2-37t",
@@ -1944,7 +1976,7 @@ export const detectionProducts: Product[] = [
     features: ["2-stage TE cooling", "Large 9 mm² area", "Maximum sensitivity"],
     applications: ["fire-flame-gas", "food-analysis", "industrial"],
     relatedProducts: ["at2-28te", "at2s-38t"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/A-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/A-Series_IR-Detectors.pdf",
   },
   {
     id: "at2s-38t",
@@ -1966,7 +1998,7 @@ export const detectionProducts: Product[] = [
     features: ["2-stage TE cooling", "Sealed package", "Field deployable"],
     applications: ["fire-flame-gas", "food-analysis", "industrial"],
     relatedProducts: ["at2-37t", "at2-28te"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/03/A-Series_IR-DetectorsDS.pdf",
+    datasheetUrl: "/datasheets/A-Series_IR-Detectors.pdf",
   },
 
   // ─── APD — Avalanche Photodiodes ──────────────────────────────────
@@ -2003,7 +2035,7 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["industrial", "aerospace-defense"],
     relatedProducts: ["odd-apd-020-905-si-t46", "odd-apd-020-1064-si-t46"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/10/ODD-APD-001.pdf",
+    datasheetUrl: "/datasheets/ODD-APD-001.pdf",
     isNew: true,
   },
   {
@@ -2040,7 +2072,7 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["aerospace-defense", "industrial"],
     relatedProducts: ["odd-apd-020-1064-si-t46", "odd-apd-003-1550-iga-t46"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/10/ODD-APD-002.pdf",
+    datasheetUrl: "/datasheets/ODD-APD-002.pdf",
     isFeatured: true,
     isNew: true,
   },
@@ -2077,7 +2109,7 @@ export const detectionProducts: Product[] = [
     ],
     applications: ["aerospace-defense", "industrial", "medical"],
     relatedProducts: ["odd-apd-020-905-si-t46", "odd-apd-003-1550-iga-t46"],
-    datasheetUrl: "https://optodiode.com/wp-content/uploads/2025/10/ODD-APD-003.pdf",
+    datasheetUrl: "/datasheets/ODD-APD-003.pdf",
     isNew: true,
   },
 ];
