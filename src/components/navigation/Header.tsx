@@ -65,13 +65,13 @@ function MegaMenuPanel({
                       key={sub.href}
                       href={sub.href}
                       onClick={onClose}
-                      className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1"
+                      className="group/sub block text-sm py-1.5 px-2 -mx-2 rounded-md hover:bg-primary/10 transition-colors"
                     >
-                      <span className="font-medium text-foreground/80">
+                      <span className="font-medium text-foreground/80 group-hover/sub:text-primary transition-colors">
                         {sub.label}
                       </span>
                       {sub.description && (
-                        <span className="ml-2 text-xs text-muted-foreground">
+                        <span className="ml-2 text-xs text-muted-foreground group-hover/sub:text-primary/70 transition-colors">
                           {sub.description}
                         </span>
                       )}

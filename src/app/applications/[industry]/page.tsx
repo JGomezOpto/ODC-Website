@@ -8,6 +8,10 @@ import { cn } from "@/lib/utils";
 import { Container } from "@/components/layout/Container";
 import { ScrollReveal } from "@/components/common/ScrollReveal";
 import { ProductCard } from "@/components/products/ProductCard";
+
+const industryListColumns = [
+  { key: "wavelengthRange" as const, label: "Wavelength", width: "w-28" },
+];
 import { getIndustrySlugs, getProductsByIndustry } from "@/lib/sanity/data";
 import { industries as staticIndustries } from "@/data/industries";
 import type { IndustryVertical } from "@/data/products/types";
@@ -112,7 +116,7 @@ export default async function IndustryPage({ params }: { params: Promise<{ indus
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {products.slice(0, 6).map((p, i) => (
-                <ProductCard key={p.id} product={p} index={i} />
+                <ProductCard key={p.id} product={p} index={i} listColumns={industryListColumns} />
               ))}
             </div>
           </Container>

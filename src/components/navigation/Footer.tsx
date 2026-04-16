@@ -30,6 +30,7 @@ const footerLinks = {
     { label: "News & Events", href: "/news-events" },
     { label: "Contact Us", href: "/contact" },
     { label: "Request Quote", href: "/request-quote" },
+    { label: "Privacy Policy", href: "/privacy" },
   ],
 };
 

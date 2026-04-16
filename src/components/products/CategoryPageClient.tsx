@@ -155,7 +155,7 @@ export function CategoryPageClient({
           {viewMode === "list" && (
             <div className="hidden sm:flex items-center gap-4 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
               <div className="w-14 shrink-0" />
-              <div className="w-48 shrink-0">Product</div>
+              <div className="w-36 shrink-0">Product</div>
               <div className="flex items-center flex-1 min-w-0">
                 {listColumns.map((col) => (
                   <div key={col.key} className={`${col.width} shrink-0`}>

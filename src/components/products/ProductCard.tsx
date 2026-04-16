@@ -44,7 +44,7 @@ export function ProductCard({
         transition={{ duration: 0.2, delay: index * 0.02 }}
       >
         <Link href={href} className="group block">
-          <div className="flex items-center gap-4 rounded-lg border border-border bg-card px-4 py-2.5 transition-all duration-200 hover:shadow-[0_0_20px_rgba(239,68,68,0.08)] hover:border-primary/30">
+          <div className="flex items-center gap-4 rounded-lg border border-border bg-card px-4 py-2.5 overflow-hidden transition-all duration-200 hover:shadow-[0_0_20px_rgba(239,68,68,0.08)] hover:border-primary/30">
             {/* Thumbnail */}
             <div className="relative w-14 h-14 rounded-lg overflow-hidden bg-muted shrink-0">
               {product.image ? (
@@ -62,7 +62,7 @@ export function ProductCard({
             </div>
 
             {/* Name + Part Number */}
-            <div className="min-w-0 w-48 shrink-0">
+            <div className="min-w-0 w-36 shrink-0">
               <div className="flex items-center gap-2">
                 <h3 className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors truncate">
                   {product.name}
